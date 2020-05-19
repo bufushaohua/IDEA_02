@@ -3,12 +3,14 @@ package com.cyc;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 
 @Data //自动生成Getter、Setter方法
 @AllArgsConstructor //自动生成全参构造函数
 @NoArgsConstructor // 自动生成无参构造函数
+@ToString  //自动生成ToString方法
 @Entity //声明实体类
 @Table(name = "cst_customer") // 建立实体类和表的映射关系
 public class Customer {
